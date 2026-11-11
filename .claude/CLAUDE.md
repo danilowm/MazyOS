@@ -11,6 +11,9 @@ negócio. Estrutura:
 - `skills/` — as skills do MazyOS, invocadas como `/mazyos:<nome>`
 - `templates/` — perfis de CLAUDE.md, catálogos e o esqueleto do workspace
   (`templates/workspace/`, copiado pela skill `/mazyos:instalar`)
+- `vscode/` — a extensão pro VS Code e Antigravity IDE (host em `src/`, interface
+  em `webview/`, contrato em `ARQUITETURA.md`). Ela embute `skills/` e `templates/`
+  no build (`npm run preparar`): a fonte da verdade continua sendo o plugin.
 
 Regras ao mexer aqui:
 

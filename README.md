@@ -116,6 +116,23 @@ pasta, que o `/mazyos:instalar` existe.
 
 ---
 
+## MazyOS no VS Code e no Antigravity
+
+O mesmo sistema também existe como extensão de editor, na pasta [vscode/](vscode/). Ela lê a
+mesma memória, traz as mesmas 17 skills e deixa você escolher quem roda o trabalho: Claude Code
+(sua conta Claude), Codex (sua conta ChatGPT) ou Antigravity (sua conta Google). Cada um entra
+pelo login oficial do próprio CLI, e a extensão só monta o pedido e mostra o que está acontecendo
+num console ao lado do editor. Funciona no VS Code, no Antigravity IDE e no Cursor.
+
+Enquanto ela não está no marketplace, instala pelo arquivo `.vsix` gerado em `vscode/`:
+
+```
+cd vscode && npm install && npm run empacotar
+code --install-extension mazyos-0.1.0.vsix
+```
+
+O resto está no [README da extensão](vscode/README.md).
+
 ## As skills
 
 São 17 skills do Claude Code, prontas pra usar. Digita `/mazyos:` e a
